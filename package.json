@@ -1,0 +1,15 @@
+{
+  "name": "@telecraft/typed-commands",
+  "version": "0.0.1",
+  "description": "TypeScript functions generated from Minecraft commands",
+  "main": "dist",
+  "scripts": {
+    "command-gen": "./command-generator.js"
+  },
+  "author": "Feathers Studio <@feathersstudio> (https://thefeathers.in)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
