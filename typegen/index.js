@@ -88,19 +88,19 @@ const Writer = path => {
 					} else if (isRequired(key)) {
 						const str = cleanupString(key);
 						if (str === "function") {
-							overload += `, fnName${optionalArgAdded ? "?" : ""}: "string"`;
+							overload += `, fnName${optionalArgAdded ? "?" : ""}: string`;
 						} else if (str === "command") {
-							overload += `, commandName${optionalArgAdded ? "?" : ""}: "string"`;
+							overload += `, commandName${optionalArgAdded ? "?" : ""}: string`;
 						} else {
 							if (seenConstants.has(str)) {
-								overload += `, ${str}Name${optionalArgAdded ? "?" : ""}: "string"`;
+								overload += `, ${str}Name${optionalArgAdded ? "?" : ""}: string`;
 							} else {
-								overload += `, ${str}${optionalArgAdded ? "?" : ""}: "string"`;
+								overload += `, ${str}${optionalArgAdded ? "?" : ""}: string`;
 							}
 						}
 					} else if (isOptional(key)) {
 						const str = cleanupString(key);
-						overload += `, ${str}?: "string"`;
+						overload += `, ${str}?: string`;
 						optionalArgAdded = true;
 					}
 				}
